@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 10px;
+            box-shadow:
+                rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+                rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border-radius: 8px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .title h5 {
+            font-size: 14px;
+        }
+
+        button {
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .status {
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .retry-btn {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="status" class="status"></div>
+
+    <div class="container"></div>
+
+    <script>
+
+        const API_URL = "https://dummyjson.com/products";
+
+        const container = document.querySelector(".container");
+        const status = document.querySelector("#status");
+
+
+        // --------------------------------
+        // Loading
+        // --------------------------------
+
+        function showLoading() {
+            status.innerHTML = "Loading products...";
+        }
+
+
+        // --------------------------------
+        // Error
+        // --------------------------------
+
+        function showError(message) {
+
+            status.innerHTML = `
+                <div class="error">
+                    ${message}
+                    <br>
+
+                    <button class="retry-btn" id="retryBtn">
+                        Retry
+                    </button>
+                </div>
+            `;
+
+            document
+                .querySelector("#retryBtn")
+                .addEventListener("click", apiHandler);
+        }
+
+
+        // --------------------------------
+        // Empty State
+        // --------------------------------
+
+        function showEmpty() {
+
+            status.innerHTML = `
+                <div>
+                    No products found.
+                </div>
+            `;
+        }
+
+
+        // --------------------------------
+        // Render Products
+        // --------------------------------
+
+        function renderProducts(products) {
+
+            container.innerHTML = "";
+
+            const fragment = document.createDocumentFragment();
+
+            products.forEach(product => {
+
+                const card = document.createElement("div");
+
+                card.classList.add("card");
+
+                card.innerHTML = `
+                    <img
+                        src="${product.thumbnail}"
+                        alt="${product.title}"
+                        loading="lazy"
+                    >
+
+                    <div class="title">
+
+                        <h5>
+                            ${product.title}
+                        </h5>
+
+                        <button
+                            class="add-btn"
+                            data-id="${product.id}"
+                        >
+                            Add to cart
+                        </button>
+
+                    </div>
+                `;
+
+                fragment.appendChild(card);
+            });
+
+            container.appendChild(fragment);
+        }
+
+
+        // --------------------------------
+        // API Handler
+        // --------------------------------
+
+        async function apiHandler() {
+
+            try {
+
+                // Loading
+                showLoading();
+
+                // Clear previous data
+                container.innerHTML = "";
+
+
+                // API Request
+                const response = await fetch(API_URL);
+
+
+                // HTTP Error Handling
+                if (!response.ok) {
+
+                    throw new Error(
+                        `Request failed with status ${response.status}`
+                    );
+                }
+
+
+                // Parse JSON
+                const data = await response.json();
+
+
+                // Validate API Response
+                if (
+                    !data ||
+                    !Array.isArray(data.products)
+                ) {
+
+                    throw new Error(
+                        "Invalid API response"
+                    );
+                }
+
+
+                // Empty Data
+                if (data.products.length === 0) {
+
+                    showEmpty();
+                    return;
+                }
+
+
+                // Render
+                renderProducts(data.products);
+
+                // Remove loading message
+                status.innerHTML = "";
+
+
+            } catch (error) {
+
+                console.error(
+                    "Product API Error:",
+                    error
+                );
+
+                showError(
+                    "Unable to load products. Please try again."
+                );
+
+
+            } finally {
+
+                console.log(
+                    "API request completed"
+                );
+            }
+        }
+
+
+        // --------------------------------
+        // Event Delegation
+        // --------------------------------
+
+        container.addEventListener(
+            "click",
+            function (event) {
+
+                if (
+                    event.target.classList.contains("add-btn")
+                ) {
+
+                    const productId =
+                        event.target.dataset.id;
+
+                    console.log(
+                        "Add product:",
+                        productId
+                    );
+
+                    // Future:
+                    // addToCart(productId)
+                }
+            }
+        );
+
+
+        // --------------------------------
+        // Initial API Call
+        // --------------------------------
+
+        apiHandler();
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Grid</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1300px;
+            padding: 20px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            padding: 30px;
+            font-size: 30px;
+            text-align: center;
+            box-shadow: 0 0 2px teal;
+        }
+
+        /* Tablet */
+        @media (width < 900px) {
+
+            .container {
+                padding: 15px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .card {
+                padding: 20px;
+                font-size: 24px;
+            }
+        }
+
+        /* Mobile */
+        @media (width < 600px) {
+
+            .container {
+                padding: 10px;
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .card {
+                padding: 15px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+        <div class="card">7</div>
+        <div class="card">8</div>
+    </div>
+
+</body>
+
+</html>

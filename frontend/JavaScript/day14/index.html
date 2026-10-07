@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #card {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        .done {
+            background-color: yellow;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white !important;
+            border: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="card">Hello</div>
+    <button onclick="changeStyle(1)">Add Style</button>
+    <button onclick="changeStyle(2)">Remove Style</button>
+
+    <script>
+        const card = document.querySelector("#card");
+
+        function changeStyle(flag) {
+            if (flag == 1) {
+                card.innerText = "Hello Mahesh";
+                card.setAttribute("class", "done")
+            } else {
+                card.innerText = "Hello";
+                card.setAttribute("class", "")
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

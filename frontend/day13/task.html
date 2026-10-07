@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            width: 1100px;
+            border: 2px solid red;
+            padding: 10px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns:repeat(3,calc(33% - 20px)) ;
+            /* grid-template-rows: 150px 150px 150px; */
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #2A7B9B;
+            border-radius: 10px;
+            color: white;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .card:nth-child(even){
+            background-color: #2A7B9B;
+        }
+
+         .card:nth-child(odd){
+            background-color: #9B2A99;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="card">Web</div>
+        <div class="card">Graphic</div>
+        <div class="card">Marketing</div>
+        <div class="card">Web</div>
+        <div class="card">Marketing</div>
+        <div class="card">Graphic</div>
+        <div class="card">Marketing</div>
+        <div class="card">Graphic</div>
+        <div class="card">Web</div>
+    </div>
+
+</body>
+
+</html>

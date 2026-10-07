@@ -1,0 +1,62 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+
+    
+    <linearGradient id="mac-cto" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8ab5e"></stop>
+      <stop offset="1" stop-color="#f3695f"></stop>
+    </linearGradient>
+    <linearGradient id="mac-cto-elevated" x1="0.16650136" y1="23.976196" x2="15.151624" y2="23.976196" href="#mac-cto"></linearGradient>
+
+
+    
+    <linearGradient id="intelligence" gradientUnits="userSpaceOnUse">
+      <stop offset=".09" stop-color="#fd9700"></stop>
+      <stop offset=".28" stop-color="#f40"></stop>
+      <stop offset=".49" stop-color="#ff2469"></stop>
+      <stop offset=".78" stop-color="#c65cff"></stop>
+      <stop offset="1" stop-color="#0092ff"></stop>
+    </linearGradient>
+    <linearGradient id="intelligence-base" x1="12.595" y1="5.682" x2="26.102" y2="24.100" href="#intelligence"></linearGradient>
+    <linearGradient id="intelligence-elevated" x1="15.595" y1="11.682" x2="35.102" y2="40.189" href="#intelligence"></linearGradient>
+
+    
+    <linearGradient id="uk-financing">
+      <stop offset="0" stop-color="#056bbd"></stop>
+      <stop offset="1" stop-color="#09b54e"></stop>
+    </linearGradient>
+    <linearGradient id="uk-financing-elevated" x1="0" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox" href="#uk-financing"></linearGradient>
+
+    
+    <linearGradient id="apple-upgrade-hand-rays">
+      <stop offset="0" stop-color="#742EBE"></stop>
+      <stop offset="1" stop-color="#7C2DB3"></stop>
+    </linearGradient>
+    <linearGradient id="dd-apple-upgrade-hand-rays" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="0" href="#apple-upgrade-hand-rays"></linearGradient>
+
+    <linearGradient id="apple-upgrade-calendar-checkmark">
+      <stop offset="0" stop-color="#AC2373"></stop>
+      <stop offset="1" stop-color="#A5247C"></stop>
+    </linearGradient>
+    <linearGradient id="dd-apple-upgrade-calendar-checkmark" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="0" href="#apple-upgrade-calendar-checkmark"></linearGradient>
+
+    <linearGradient id="apple-upgrade-arrow-up-right-circle">
+      <stop offset="0" stop-color="#CB1B47"></stop>
+      <stop offset="1" stop-color="#D41A3C"></stop>
+    </linearGradient>
+    <linearGradient id="dd-apple-upgrade-arrow-up-right-circle" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="0" href="#apple-upgrade-arrow-up-right-circle"></linearGradient>
+
+    <linearGradient id="apple-upgrade-apple-logo">
+      <stop offset="0" stop-color="#F7120B"></stop>
+      <stop offset="1" stop-color="#FE1002"></stop>
+    </linearGradient>
+    <linearGradient id="dd-apple-upgrade-apple-logo" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="0" href="#apple-upgrade-apple-logo"></linearGradient>
+
+    <linearGradient id="apple-upgrade-how-to-upgrade">
+      <stop offset="0" stop-color="#7230C1"></stop>
+      <stop offset=".9" stop-color="#FA1207"></stop>
+    </linearGradient>
+    <linearGradient id="dd-apple-upgrade-how-to-upgrade" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0" href="#apple-upgrade-how-to-upgrade"></linearGradient>
+
+  </defs>
+</svg>

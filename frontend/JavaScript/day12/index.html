@@ -1,0 +1,319 @@
+<script>
+
+    // const students = [
+    //     {
+    //         name: "Rohit",
+    //         city: "Jaipur"
+    //     },
+    //     {
+    //         name: "Mohit",
+    //         city: "Jaipur"
+    //     },
+    //     {
+    //         name: "Amit",
+    //         city: "Delhi"
+    //     },
+    //     {
+    //         name: "Rahul",
+    //         city: "Jodhpur"
+    //     },
+    //     {
+    //         name: "Priya",
+    //         city: "Kota"
+    //     },
+    //     {
+    //         name: "Neha",
+    //         city: "Udaipur"
+    //     },
+    //     {
+    //         name: "Vikas",
+    //         city: "Ajmer"
+    //     },
+    //     {
+    //         name: "Ankit",
+    //         city: "Jaipur"
+    //     },
+    //     {
+    //         name: "Pooja",
+    //         city: "Alwar"
+    //     },
+    //     {
+    //         name: "Suresh",
+    //         city: "Bikaner"
+    //     },
+    //     {
+    //         name: "Karan",
+    //         city: "Jaipur"
+    //     },
+    //     {
+    //         name: "Nisha",
+    //         city: "Kota"
+    //     },
+    //     {
+    //         name: "Manish",
+    //         city: "Jodhpur"
+    //     },
+    //     {
+    //         name: "Sneha",
+    //         city: "Udaipur"
+    //     },
+    //     {
+    //         name: "Deepak",
+    //         city: "Ajmer"
+    //     },
+    //     {
+    //         name: "Ravi",
+    //         city: "Jaipur"
+    //     },
+    //     {
+    //         name: "Kavita",
+    //         city: "Delhi"
+    //     },
+    //     {
+    //         name: "Arjun",
+    //         city: "Alwar"
+    //     },
+    //     {
+    //         name: "Simran",
+    //         city: "Jaipur"
+    //     },
+    //     {
+    //         name: "Nitin",
+    //         city: "Bikaner"
+    //     },
+    //     {
+    //         name: "Shivam",
+    //         city: "Kota"
+    //     },
+    //     {
+    //         name: "Anjali",
+    //         city: "Jodhpur"
+    //     },
+    //     {
+    //         name: "Harsh",
+    //         city: "Jaipur"
+    //     },
+    //     {
+    //         name: "Ritu",
+    //         city: "Udaipur"
+    //     },
+    //     {
+    //         name: "Varun",
+    //         city: "Ajmer"
+    //     },
+    //     {
+    //         name: "Muskan",
+    //         city: "Jaipur"
+    //     },
+    //     {
+    //         name: "Akash",
+    //         city: "Delhi"
+    //     },
+    //     {
+    //         name: "Komal",
+    //         city: "Kota"
+    //     },
+    //     {
+    //         name: "Yash",
+    //         city: "Jodhpur"
+    //     },
+    //     {
+    //         name: "Divya",
+    //         city: "Jaipur"
+    //     }
+    // ];
+
+
+    // function count(city) {
+    //     let sum = 0
+    //     for (const st of students) {
+    //         if (st.city === city) {
+    //             sum++
+    //         }
+    //     }
+    //     console.log(`total student ${city} ====> ${sum}`)
+    // }
+
+
+    const cart = [
+        {
+            title: "Iphone Cover",
+            price: 7000
+        },
+        {
+            title: "Charger",
+            price: 500
+        },
+        {
+            title: "USB Cable",
+            price: 300
+        },
+        {
+            title: "Power Bank",
+            price: 1500
+        },
+        {
+            title: "Wireless Earbuds",
+            price: 2500
+        },
+        {
+            title: "Bluetooth Speaker",
+            price: 1800
+        },
+        {
+            title: "Phone Stand",
+            price: 600
+        },
+        {
+            title: "Tempered Glass",
+            price: 250
+        },
+        {
+            title: "Smart Watch",
+            price: 3500
+        },
+        {
+            title: "Laptop Bag",
+            price: 2200
+        },
+        {
+            title: "Wireless Mouse",
+            price: 900
+        },
+        {
+            title: "Keyboard",
+            price: 1200
+        }
+    ];
+
+
+    // function totalSum(items) {
+    //     let sum = 0;
+    //     for (const product of items) {
+    //         sum += product.price
+    //     }
+
+    //     console.log(` total sum of cart is ${sum} `)
+    // }
+
+
+    // totalSum(cart)
+
+    const students = [
+        {
+            name: "Rohit",
+            marks: 85,
+            city: "Jaipur",
+            gender: "Male"
+        },
+        {
+            name: "Mohit",
+            marks: 72,
+            city: "Delhi",
+            gender: "Male"
+        },
+        {
+            name: "Priya",
+            marks: 91,
+            city: "Mumbai",
+            gender: "Female"
+        },
+        {
+            name: "Anjali",
+            marks: 78,
+            city: "Jaipur",
+            gender: "Female"
+        },
+        {
+            name: "Rahul",
+            marks: 65,
+            city: "Kota",
+            gender: "Male"
+        },
+        {
+            name: "Neha",
+            marks: 88,
+            city: "Delhi",
+            gender: "Female"
+        },
+        {
+            name: "Amit",
+            marks: 56,
+            city: "Ajmer",
+            gender: "Male"
+        },
+        {
+            name: "Pooja",
+            marks: 95,
+            city: "Udaipur",
+            gender: "Female"
+        },
+        {
+            name: "Karan",
+            marks: 81,
+            city: "Jaipur",
+            gender: "Male"
+        },
+        {
+            name: "Sneha",
+            marks: 69,
+            city: "Jodhpur",
+            gender: "Female"
+        },
+        {
+            name: "Vikas",
+            marks: 74,
+            city: "Kota",
+            gender: "Male"
+        },
+        {
+            name: "Simran",
+            marks: 89,
+            city: "Bikaner",
+            gender: "Female"
+        },
+        {
+            name: "Arjun",
+            marks: 93,
+            city: "Delhi",
+            gender: "Male"
+        },
+        {
+            name: "Kavita",
+            marks: 76,
+            city: "Ajmer",
+            gender: "Female"
+        },
+        {
+            name: "Manish",
+            marks: 61,
+            city: "Jodhpur",
+            gender: "Male"
+        }
+    ];
+    // Create an array of student objects with name, marks,gender and city. 
+
+    //Calculate avarage marks
+    //Calculate Male student  avarage marks
+    //Calculate Female student  avarage marks
+
+
+    function findAvarage(gender, students) {
+        let marks = 0;
+        let student = 0;
+
+        for (let st of students) {
+            if (st.gender === gender) {
+                marks += st.marks
+                student++
+            }
+        }
+        console.log(marks / student)
+
+    }
+
+
+    findAvarage("Male", students)
+    findAvarage("Female", students)
+
+</script>

@@ -1,0 +1,952 @@
+{
+  "meta": {
+    "generatedFor": ["app-development", "website-development", "seo"],
+    "version": "1.0",
+    "note": "Toggle 'active' to show/hide any section on frontend. Edit content fields to update text."
+  },
+  "pages": {
+    "app-development": {
+      "hero": {
+        "active": true,
+        "title": "Mobile Application Development",
+        "subtitle": "We design and develop powerful, scalable mobile applications that deliver seamless user experiences on iOS and Android.",
+        "badges": [
+          "Mobile Ready",
+          "iOS",
+          "Android",
+          "Custom Features",
+          "Secure",
+          "Cloud Sync"
+        ],
+        "ctaPrimary": { "text": "Start Your Project", "action": "contact" },
+        "ctaSecondary": { "text": "Request a call back", "action": "callback" }
+      },
+      "services": {
+        "active": true,
+        "sectionTitle": "Our Development Services",
+        "sectionSubtitle": "Comprehensive solutions for all your web development needs",
+        "items": [
+          {
+            "title": "UI/UX Design",
+            "description": "Beautiful, intuitive designs for better user engagement on mobile devices."
+          },
+          {
+            "title": "Cross-Platform Development",
+            "description": "Build once, deploy across iOS and Android using React Native or Flutter."
+          },
+          {
+            "title": "iOS Native Apps",
+            "description": "Swift-powered iOS apps optimized for performance and user experience."
+          },
+          {
+            "title": "Android Native Apps",
+            "description": "Robust, scalable Android apps using Kotlin or Java."
+          }
+        ]
+      },
+      "techStack": {
+        "active": true,
+        "sectionTitle": "Our Technology Stack",
+        "sectionSubtitle": "We use modern technologies to build fast, scalable websites",
+        "items": [
+          {
+            "name": "React Native",
+            "description": "Build native-like apps with a single codebase"
+          },
+          {
+            "name": "Flutter",
+            "description": "Google's UI toolkit for natively compiled apps"
+          },
+          {
+            "name": "Swift / Kotlin",
+            "description": "For high-performance native development"
+          },
+          {
+            "name": "Firebase",
+            "description": "Authentication, hosting, and real-time database"
+          },
+          {
+            "name": "GraphQL / REST",
+            "description": "Seamless data fetching and API communication"
+          },
+          {
+            "name": "AWS / GCP",
+            "description": "Scalable cloud infrastructure for your app"
+          }
+        ]
+      },
+      "whyStandOut": {
+        "active": true,
+        "sectionTitle": "Why Our Websites Stand Out",
+        "sectionSubtitle": "We build websites that not only look great but deliver real business results",
+        "items": [
+          {
+            "title": "Cross-Platform",
+            "description": "Single codebase for iOS and Android"
+          },
+          {
+            "title": "High Performance",
+            "description": "Optimized for speed and responsiveness"
+          },
+          {
+            "title": "Secure",
+            "description": "Built with enterprise-level security best practices"
+          },
+          {
+            "title": "Scalable",
+            "description": "Apps designed to grow with your user base"
+          }
+        ]
+      },
+      "process": {
+        "active": true,
+        "sectionTitle": "Our Process",
+        "steps": [
+          {
+            "step": "01",
+            "title": "Strategy",
+            "description": "Understand goals, target audience, and define the roadmap."
+          },
+          {
+            "step": "02",
+            "title": "Design",
+            "description": "Wireframes, prototypes, and user flows for a seamless experience."
+          },
+          {
+            "step": "03",
+            "title": "Development",
+            "description": "Agile sprints using cross-platform or native stacks."
+          },
+          {
+            "step": "04",
+            "title": "Testing",
+            "description": "QA across devices and environments for bug-free launches."
+          },
+          {
+            "step": "05",
+            "title": "Deployment",
+            "description": "Launch to App Store and Google Play with complete support."
+          },
+          {
+            "step": "06",
+            "title": "Maintenance",
+            "description": "Post-launch updates, feature enhancements, and monitoring."
+          }
+        ]
+      },
+      "results": {
+        "active": true,
+        "sectionTitle": "Measurable Results",
+        "sectionSubtitle": "The impact of a professionally developed website",
+        "stats": [
+          { "value": "2x", "label": "Faster Time to Market" },
+          { "value": "70%+", "label": "Code Reuse Across Platforms" },
+          { "value": "100%", "label": "App Store Compliance" },
+          { "value": "99.9%", "label": "Uptime & Stability" }
+        ]
+      },
+      "contentBlocks": {
+        "active": true,
+        "intro": {
+          "title": "Professional Mobile & Web App Development Services from Strategy to Management",
+          "body": "At Promfly, we don't just code apps; we build scalable digital products. From initial concept development to post-launch management, our mobile application development services are designed to deliver measurable business value."
+        },
+        "whyChoose": {
+          "active": true,
+          "title": "Why Choose Promfly for Application Development?",
+          "body": "We combine creativity, technology, and business strategy. Our team of app developers and UI/UX designers craft solutions that fit the needs of different industries including education, retail, healthcare, fintech, and logistics."
+        },
+        "servicesTable": {
+          "active": true,
+          "title": "Comprehensive List of Application Development Services",
+          "rows": [
+            {
+              "serviceArea": "Android App Development Services",
+              "description": "Native apps using Kotlin/Java with secure architecture",
+              "platforms": "Smartphones, Tablets, Smart TVs, Wearables"
+            },
+            {
+              "serviceArea": "Custom iOS App Development",
+              "description": "Swift-based, App Store-optimized apps",
+              "platforms": "iPhones, iPads, Apple Watch"
+            },
+            {
+              "serviceArea": "Flutter App Development Company Expertise",
+              "description": "Cross-platform apps with a single codebase",
+              "platforms": "Android, iOS, Web"
+            },
+            {
+              "serviceArea": "Enterprise Application Development Services",
+              "description": "ERP, CRM, and workflow apps for large organizations",
+              "platforms": "Cloud & On-Premises"
+            },
+            {
+              "serviceArea": "Web Application Development Services",
+              "description": "Progressive Web Apps, dashboards, portals",
+              "platforms": "All browsers"
+            },
+            {
+              "serviceArea": "AI App Development Company Services",
+              "description": "Chatbots, predictive analytics, recommendation engines",
+              "platforms": "Mobile & Web"
+            },
+            {
+              "serviceArea": "Education App Development Company in India",
+              "description": "eLearning apps, virtual classrooms, LMS",
+              "platforms": "Android, iOS, Web"
+            }
+          ]
+        },
+        "processDetail": {
+          "active": true,
+          "title": "From Development to Management: Our Process",
+          "steps": [
+            {
+              "step": "1",
+              "title": "Discovery & Strategy",
+              "description": "We start with deep research—user personas, competitor analysis, and business objectives."
+            },
+            {
+              "step": "2",
+              "title": "UI/UX Design",
+              "description": "Our designers craft wireframes, prototypes, and mockups focusing on accessibility and brand guidelines."
+            },
+            {
+              "step": "3",
+              "title": "Development & Integration",
+              "description": "Using agile sprints, our developers build secure, scalable apps."
+            },
+            {
+              "step": "4",
+              "title": "Testing & Quality Assurance",
+              "description": "Automated and manual testing ensure bug-free apps."
+            },
+            {
+              "step": "5",
+              "title": "Deployment & Post-Launch Management",
+              "description": "We publish your app on Google Play, App Store, or private enterprise stores."
+            }
+          ]
+        },
+        "industries": {
+          "active": true,
+          "title": "Industries We Serve",
+          "items": [
+            {
+              "name": "Education",
+              "description": "As a top education app development company in India, we create immersive e-learning experiences."
+            },
+            {
+              "name": "E-Commerce & Retail",
+              "description": "AI-driven mobile commerce solutions."
+            },
+            {
+              "name": "Healthcare",
+              "description": "HIPAA-compliant apps with telemedicine features."
+            },
+            {
+              "name": "Finance",
+              "description": "Secure mobile banking and payment apps."
+            },
+            {
+              "name": "Logistics & Transport",
+              "description": "Real-time tracking and fleet management."
+            }
+          ]
+        },
+        "benefits": {
+          "active": true,
+          "title": "Mobile App Development Services in India: Benefits",
+          "points": [
+            "Access to top software development companies in Delhi with lower turnaround time.",
+            "End-to-end services under one roof (design, development, digital marketing).",
+            "Experience working with startups and Fortune 500 clients."
+          ]
+        },
+        "comparison": {
+          "active": true,
+          "title": "Promfly vs. Other App Development Companies",
+          "headers": ["Features", "Promfly", "Typical App Development Company"],
+          "rows": [
+            ["End-to-End Strategy", "✓", ""],
+            ["In-House Design & QA", "✓", "Partial"],
+            ["Cross-Platform Expertise (Flutter)", "✓", "Limited"],
+            ["Integrated Digital Marketing Support", "✓", ""],
+            [
+              "Location Advantage – App Development Company in Noida",
+              "✓",
+              "Varies"
+            ]
+          ]
+        },
+        "techStackDetail": {
+          "active": true,
+          "title": "Our Technology Stack",
+          "categories": [
+            {
+              "name": "Android",
+              "items": ["Kotlin", "Java", "Android Studio"]
+            },
+            { "name": "iOS", "items": ["Swift", "Xcode"] },
+            { "name": "Cross-Platform", "items": ["Flutter", "React Native"] },
+            {
+              "name": "Backend",
+              "items": ["Node.js", "Python", "PHP", "Java Spring Boot"]
+            },
+            {
+              "name": "Cloud & DevOps",
+              "items": ["AWS", "Azure", "Docker", "CI/CD Pipelines"]
+            }
+          ]
+        },
+        "customSolutions": {
+          "active": true,
+          "title": "Custom Solutions for Every Business Size",
+          "items": [
+            {
+              "segment": "Startups",
+              "description": "MVP development, funding-ready prototypes."
+            },
+            {
+              "segment": "SMEs",
+              "description": "Scalable apps with analytics dashboards."
+            },
+            {
+              "segment": "Enterprises",
+              "description": "High-volume, secure apps integrated with ERP/CRM systems."
+            }
+          ]
+        },
+        "postDevelopment": {
+          "active": true,
+          "title": "Post-Development Services",
+          "points": [
+            "Version upgrades for Android app development services.",
+            "App Store optimization for custom iOS app development.",
+            "Security patching and performance monitoring.",
+            "Integration with Promfly's digital marketing solutions."
+          ]
+        },
+        "partnerCTA": {
+          "active": true,
+          "title": "Partner With Promfly Today",
+          "body": "Looking for the best app development company in India to build your next big idea? Contact us for a free consultation.",
+          "ctaText": "Start Your Project"
+        }
+      },
+      "footerCTA": {
+        "active": true,
+        "title": "Ready to Transform Your Online Presence ?",
+        "subtitle": "Let's build a website that drives results for your business.",
+        "ctaPrimary": "Start Your Project",
+        "ctaSecondary": "Request a call back",
+        "supportNote": "OR contact our learner support. We are available 24/7."
+      }
+    },
+    "website-development": {
+      "hero": {
+        "active": true,
+        "title": "Professional Website Development",
+        "subtitle": "Build high-performance, visually stunning websites that convert visitors into customers with our expert development services.",
+        "badges": [
+          "Web Apps",
+          "Mobile Ready",
+          "E-Commerce",
+          "SEO Friendly",
+          "Secure",
+          "Fast"
+        ],
+        "ctaPrimary": { "text": "Start Your Project", "action": "contact" },
+        "ctaSecondary": { "text": "Request a call back", "action": "callback" }
+      },
+      "services": {
+        "active": true,
+        "sectionTitle": "Our Development Services",
+        "sectionSubtitle": "Comprehensive solutions for all your web development needs",
+        "items": [
+          {
+            "title": "Custom Web Design",
+            "description": "Bespoke designs tailored to your brand identity and business goals.",
+            "tags": ["UI/UX", "Figma", "Adobe XD"]
+          },
+          {
+            "title": "Frontend Development",
+            "description": "Modern, responsive interfaces built with React, Next.js and Tailwind CSS.",
+            "tags": ["React", "Next.js", "Tailwind CSS"]
+          },
+          {
+            "title": "Backend Development",
+            "description": "Robust server-side solutions with Node.js, Express, and databases.",
+            "tags": ["Node.js", "Express", "Databases"]
+          },
+          {
+            "title": "E-Commerce Solutions",
+            "description": "Feature-rich online stores with Shopify, WooCommerce or custom builds.",
+            "tags": ["Shopify", "WooCommerce", "Payment Integration"]
+          },
+          {
+            "title": "CMS Development",
+            "description": "Custom CMS solutions for content management and workflow optimization.",
+            "tags": ["WordPress", "Drupal", "Content Management"]
+          },
+          {
+            "title": "Full Stack Development",
+            "description": "End-to-end development covering frontend and backend seamlessly.",
+            "tags": ["Frontend", "Backend", "API Integration"]
+          },
+          {
+            "title": "Website Maintenance",
+            "description": "Ongoing support, updates, and optimization for your website.",
+            "tags": ["Support", "Updates", "Optimization"]
+          },
+          {
+            "title": "PHP Development",
+            "description": "Custom PHP applications and dynamic websites tailored to your needs.",
+            "tags": ["PHP", "Laravel", "CodeIgniter"]
+          },
+          {
+            "title": "React Development",
+            "description": "High-performance React applications with modern frontend architecture.",
+            "tags": ["React", "JSX", "Component Architecture"]
+          },
+          {
+            "title": "Real Estate Websites",
+            "description": "Specialized websites for real estate listings and property management.",
+            "tags": ["Property Listings", "Booking", "Maps Integration"]
+          },
+          {
+            "title": "WordPress Development",
+            "description": "Custom WordPress sites with themes, plugins, and optimization.",
+            "tags": ["WordPress", "Plugins", "Themes"]
+          },
+          {
+            "title": "Shopify Development",
+            "description": "Build and manage Shopify stores with ease and scalability.",
+            "tags": ["Shopify", "Store Management", "Payment Gateways"]
+          },
+          {
+            "title": "School Websites",
+            "description": "Professional websites for schools with features like admissions and notices.",
+            "tags": ["Admissions", "Timetable", "Notice Board"]
+          }
+        ]
+      },
+      "techStack": {
+        "active": true,
+        "sectionTitle": "Our Technology Stack",
+        "sectionSubtitle": "We use modern technologies to build fast, scalable websites",
+        "items": [
+          {
+            "name": "React/Next.js",
+            "description": "For dynamic, fast-loading interfaces"
+          },
+          {
+            "name": "Tailwind CSS",
+            "description": "Utility-first CSS for rapid development"
+          },
+          { "name": "Node.js", "description": "Scalable backend solutions" },
+          {
+            "name": "MongoDB/PostgreSQL",
+            "description": "Database solutions for all needs"
+          },
+          { "name": "GraphQL", "description": "Efficient data querying" },
+          { "name": "AWS/Vercel", "description": "Reliable cloud hosting" }
+        ]
+      },
+      "whyStandOut": {
+        "active": true,
+        "sectionTitle": "Why Our Websites Stand Out",
+        "sectionSubtitle": "We build websites that not only look great but deliver real business results",
+        "items": [
+          {
+            "title": "Lightning Fast",
+            "description": "Optimized for performance with 90+ PageSpeed scores"
+          },
+          {
+            "title": "Fully Responsive",
+            "description": "Flawless experience on all devices"
+          },
+          {
+            "title": "SEO Optimized",
+            "description": "Built for maximum search visibility"
+          },
+          {
+            "title": "Secure",
+            "description": "Enterprise-grade security protections"
+          }
+        ]
+      },
+      "process": {
+        "active": true,
+        "sectionTitle": "Our Process",
+        "steps": [
+          {
+            "step": "01",
+            "title": "Discovery",
+            "description": "We analyze your requirements and business objectives"
+          },
+          {
+            "step": "02",
+            "title": "Design",
+            "description": "Create wireframes and UI/UX mockups for approval"
+          },
+          {
+            "step": "03",
+            "title": "Development",
+            "description": "Build your website with modern technologies"
+          },
+          {
+            "step": "04",
+            "title": "Testing",
+            "description": "Rigorous quality assurance across devices"
+          },
+          {
+            "step": "05",
+            "title": "Launch",
+            "description": "Deploy and monitor your new website"
+          },
+          {
+            "step": "06",
+            "title": "Maintenance",
+            "description": "Ongoing support and updates"
+          }
+        ]
+      },
+      "results": {
+        "active": true,
+        "sectionTitle": "Measurable Results",
+        "sectionSubtitle": "The impact of a professionally developed website",
+        "stats": [
+          { "value": "3-5x", "label": "Faster Load Times" },
+          { "value": "40%+", "label": "Higher Conversions" },
+          { "value": "90+", "label": "PageSpeed Score" },
+          { "value": "100%", "label": "Mobile Responsive" }
+        ]
+      },
+      "contentBlocks": {
+        "active": true,
+        "intro": {
+          "title": "Expert Website Development Services",
+          "body": "In today's digital-first world, a website is more than just an online presence; it's the backbone of your brand identity and a powerful business growth tool."
+        },
+        "whyCritical": {
+          "active": true,
+          "title": "Why Website Development Is Critical",
+          "points": [
+            {
+              "title": "First Impressions Matter",
+              "description": "Your website is often the first point of contact between you and potential customers."
+            },
+            {
+              "title": "Accessibility Across Devices",
+              "description": "With mobile usage dominating internet traffic, your website must be responsive."
+            },
+            {
+              "title": "Business Growth & Conversion",
+              "description": "A strategically developed website focuses on user experience, performance, and functionality."
+            },
+            {
+              "title": "Search Engine Visibility",
+              "description": "SEO-friendly development is essential to appear on search engines like Google."
+            },
+            {
+              "title": "Scalability for Growing Enterprises",
+              "description": "Whether you are a small business or a large-cap company, your website should scale with your growth."
+            },
+            {
+              "title": "Security & Compliance",
+              "description": "Cybersecurity is a top priority. Our Professional Web Design Services incorporate secure coding practices."
+            }
+          ]
+        },
+        "servicesList": {
+          "active": true,
+          "title": "Comprehensive Website Development Services",
+          "intro": "Promfly provides end-to-end web development services company offerings, ensuring every aspect of your website is handled with precision.",
+          "items": [
+            {
+              "title": "Custom Web Design Services",
+              "description": "Our custom web design services focus on creating visually appealing and functional websites tailored to your brand."
+            },
+            {
+              "title": "Frontend Development",
+              "description": "We develop interactive and responsive frontends using technologies like React, HTML5, CSS3, and JavaScript."
+            },
+            {
+              "title": "Backend Development",
+              "description": "Our backend solutions power your website with robust, secure, and scalable functionality."
+            },
+            {
+              "title": "Full-Stack Development",
+              "description": "For a complete solution, our full-stack development services handle both frontend and backend seamlessly."
+            },
+            {
+              "title": "E-Commerce Development",
+              "description": "We specialize in building feature-rich e-commerce websites that enhance user experience and drive sales."
+            },
+            {
+              "title": "CMS-Based Development",
+              "description": "Manage your website effortlessly with a Content Management System (CMS)."
+            },
+            {
+              "title": "Maintenance & Support",
+              "description": "A website is never truly finished; it requires updates, optimizations, and security checks."
+            },
+            {
+              "title": "Industry-Specific Solutions",
+              "description": "We provide specialized website development services for different industries including Real Estate, Schools & Educational Institutions, and Corporate & Enterprise Websites."
+            }
+          ]
+        },
+        "businessSizes": {
+          "active": true,
+          "title": "Importance for Small to Large-Cap Businesses",
+          "intro": "A professional website is critical at every stage of business growth.",
+          "segments": [
+            {
+              "name": "Small Businesses",
+              "description": "A professional website levels the playing field for small businesses, providing a credible online presence."
+            },
+            {
+              "name": "Medium & Large Enterprises",
+              "description": "For growing enterprises, a website is an investment that ensures scalability, advanced functionality, and integration with business systems."
+            }
+          ]
+        },
+        "choosingAgency": {
+          "active": true,
+          "title": "Choosing the Right Web Design & Development Agency",
+          "intro": "Selecting the right agency is key to achieving your digital goals.",
+          "points": [
+            {
+              "title": "Custom Solutions",
+              "description": "Tailored strategies based on your business objectives."
+            },
+            {
+              "title": "Global Standards",
+              "description": "Delivering services that meet international benchmarks."
+            },
+            {
+              "title": "Diverse Expertise",
+              "description": "From Shopify agency India to Professional web development services and CMS solutions."
+            }
+          ]
+        },
+        "faqs": {
+          "active": true,
+          "title": "Frequently Asked Questions",
+          "items": [
+            {
+              "question": "Why should I hire a professional web design company?",
+              "answer": "Professional agencies like Promfly provide expertise, innovative solutions, and ongoing support to ensure your website stands out and performs efficiently."
+            },
+            {
+              "question": "Do you offer Shopify development services?",
+              "answer": "Yes, we are a leading Shopify Web Design Agency with end-to-end services to build, customize, and optimize your online store."
+            },
+            {
+              "question": "Can you develop a website for a school or real estate business?",
+              "answer": "Absolutely. We specialize in school website development and real estate websites tailored to industry needs."
+            },
+            {
+              "question": "What technologies do you use for development?",
+              "answer": "Our tech stack includes React, PHP, Node.js, WordPress, Shopify, MongoDB, and more for building robust and scalable websites."
+            },
+            {
+              "question": "Do you provide website maintenance?",
+              "answer": "Yes, our website maintenance services ensure your website remains secure, updated, and optimized for performance."
+            }
+          ]
+        },
+        "finalCTA": {
+          "active": true,
+          "title": "Take Your Business Online with Promfly",
+          "body": "Whether you are looking for a Best web design agency near New Delhi, Delhi, a Shopify agency partner, or Professional web development services, Promfly is your trusted partner."
+        }
+      },
+      "footerCTA": {
+        "active": true,
+        "title": "Ready to Transform Your Online Presence ?",
+        "subtitle": "Let's build a website that drives results for your business.",
+        "ctaPrimary": "Start Your Project",
+        "ctaSecondary": "Request a call back",
+        "supportNote": "OR contact our learner support. We are available 24/7."
+      }
+    },
+    "seo": {
+      "hero": {
+        "active": true,
+        "title": "#1 SEO Agency in India",
+        "subtitle": "Drive qualified traffic, increase conversions, and maximize ROI with our certified SEO services.",
+        "badges": [
+          "Keyword Research",
+          "On-Page SEO",
+          "Link Building",
+          "Analytics & Reporting"
+        ],
+        "ctaPrimary": { "text": "Get Free SEO Audit", "action": "contact" },
+        "ctaSecondary": { "text": "Request a call back", "action": "callback" }
+      },
+      "services": {
+        "active": true,
+        "sectionTitle": "Our SEO Services",
+        "sectionSubtitle": "Comprehensive solutions tailored to your business goals and search visibility",
+        "items": [
+          {
+            "title": "Keyword Research",
+            "description": "Comprehensive analysis to target high-intent search queries"
+          },
+          {
+            "title": "Technical SEO",
+            "description": "Optimize site structure, speed, and crawlability"
+          },
+          {
+            "title": "Local SEO",
+            "description": "Dominate local search results and Google My Business"
+          },
+          {
+            "title": "Intent SEO",
+            "description": "Align content with user search intent for better conversions"
+          },
+          {
+            "title": "SEO Audits",
+            "description": "In-depth audits to identify and fix SEO issues"
+          },
+          {
+            "title": "E-commerce SEO",
+            "description": "Optimize online stores for higher traffic and sales"
+          },
+          {
+            "title": "Link Building",
+            "description": "Build high-quality backlinks to boost domain authority"
+          },
+          {
+            "title": "On-Page SEO",
+            "description": "Optimize meta tags, headings, and content for rankings"
+          },
+          {
+            "title": "Off-Page SEO",
+            "description": "Enhance website authority through external SEO strategies"
+          },
+          {
+            "title": "Schema Markup",
+            "description": "Implement structured data to enhance SERP visibility"
+          },
+          {
+            "title": "SEO Reporting",
+            "description": "Monitor SEO performance with detailed reports"
+          },
+          {
+            "title": "Google Search Console",
+            "description": "Track and optimize your site's performance in Google"
+          }
+        ]
+      },
+      "whyMatters": {
+        "active": true,
+        "sectionTitle": "Why SEO Matters",
+        "sectionSubtitle": "SEO is the foundation of your digital presence and the most sustainable way to grow your business online.",
+        "items": [
+          {
+            "title": "Increased Visibility",
+            "description": "Get found by your target audience searching for your services"
+          },
+          {
+            "title": "Mobile Optimization",
+            "description": "Ensure flawless experience across all devices"
+          },
+          {
+            "title": "Data-Driven",
+            "description": "Continuous tracking and optimization based on performance"
+          },
+          {
+            "title": "Sustainable Growth",
+            "description": "Build long-term organic traffic that converts"
+          }
+        ]
+      },
+      "approach": {
+        "active": true,
+        "sectionTitle": "Our Approach",
+        "steps": [
+          { "step": "1", "title": "Comprehensive website audit" },
+          { "step": "2", "title": "Keyword research & strategy" },
+          { "step": "3", "title": "Technical optimization" },
+          { "step": "4", "title": "Content creation & optimization" },
+          { "step": "5", "title": "Link building & authority growth" },
+          { "step": "6", "title": "Continuous monitoring & reporting" }
+        ]
+      },
+      "results": {
+        "active": true,
+        "sectionTitle": "Proven Results",
+        "sectionSubtitle": "We measure success by the organic growth we deliver to our clients",
+        "stats": [
+          { "value": "300%+", "label": "Traffic Growth" },
+          { "value": "90%+", "label": "Keyword Rankings" },
+          { "value": "50%+", "label": "Conversion Lift" },
+          { "value": "24/7", "label": "Monitoring" }
+        ]
+      },
+      "contentBlocks": {
+        "active": true,
+        "intro": {
+          "title": "Promfly SEO Services – Boost Your Online Visibility and Drive Growth",
+          "body": "In today's digital-first world, having a strong online presence is no longer optional—it's essential. At Promfly, we specialize in result-driven SEO services in Delhi and across India, designed to help businesses of all sizes dominate search engine results, attract the right audience, and convert visitors into loyal customers."
+        },
+        "whyCritical": {
+          "active": true,
+          "title": "Why SEO Is Critical for Businesses",
+          "segments": [
+            {
+              "name": "For Small Businesses",
+              "points": [
+                "Cost-Effective Marketing: Unlike paid campaigns, our best SEO services in Delhi provide organic traffic without constant ad spend.",
+                "Local Visibility: With Local SEO services in Noida and Delhi, your business appears in Google Maps and local searches.",
+                "Building Credibility: Higher rankings boost credibility.",
+                "Long-Term Growth: Right SEO strategies sustain growth over time."
+              ]
+            },
+            {
+              "name": "For Large Enterprises",
+              "points": [
+                "Brand Visibility on a Massive Scale: Our professional SEO services ensure your brand tops search results.",
+                "Targeting Multiple Markets: International and multilingual SEO services expand your reach efficiently.",
+                "Higher ROI Compared to Paid Campaigns: SEO provides long-term returns by continuously driving organic traffic.",
+                "Enhanced User Experience: Technical SEO improvements, faster loading, and mobile optimization improve UX."
+              ]
+            }
+          ]
+        },
+        "servicesDetail": {
+          "active": true,
+          "title": "Our Comprehensive SEO Services",
+          "intro": "At Promfly Services, we provide end-to-end SEO services in Noida and Delhi tailored to meet your business goals.",
+          "items": [
+            {
+              "title": "Keyword Research & Strategy",
+              "description": "Our experts perform in-depth keyword research to identify high-intent search terms that resonate with your audience."
+            },
+            {
+              "title": "On-Page SEO",
+              "description": "We optimize every aspect of your website including meta titles, image alt text, URL structure, internal linking, and schema markup."
+            },
+            {
+              "title": "Technical SEO",
+              "description": "Comprehensive audits and optimizations for site speed, mobile responsiveness, HTTPS, sitemaps, robots.txt, and fixing crawl errors."
+            },
+            {
+              "title": "Content SEO & Semantic Optimization",
+              "description": "High-quality content including blog posts, articles, landing pages, optimized headings, internal links, and FAQ optimization."
+            },
+            {
+              "title": "Link Building & Off-Page SEO",
+              "description": "White-hat backlink strategies including guest posts, influencer outreach, content syndication, and competitor backlink analysis."
+            },
+            {
+              "title": "Local SEO",
+              "description": "Google Business Profile optimization, citations, reviews, and hyperlocal content for dominating local searches."
+            },
+            {
+              "title": "E-commerce SEO",
+              "description": "Product-level optimization, structured data, category navigation, and CRO for online stores."
+            },
+            {
+              "title": "International & Multilingual SEO",
+              "description": "Multilingual keyword research, geo-targeted strategies, and hreflang implementation for global reach."
+            },
+            {
+              "title": "SEO Analytics & Reporting",
+              "description": "Keyword ranking analysis, organic traffic growth, conversion tracking, and backlink insights for data-driven decisions."
+            },
+            {
+              "title": "Reputation & Review Management",
+              "description": "Monitor and respond to reviews, encourage positive feedback, and improve online brand perception."
+            }
+          ]
+        },
+        "whyChoose": {
+          "active": true,
+          "title": "Why Choose Promfly as Your SEO Partner",
+          "points": [
+            "Customized SEO Strategies: Tailored plans based on your industry, competitors, and target audience.",
+            "Experienced Team of SEO Experts: Proven track record in improving rankings and traffic.",
+            "Cutting-Edge Tools & Techniques: Using the latest AI analytics and white-hat practices.",
+            "Data-Driven Results: Transparent reporting and measurable growth.",
+            "Holistic Approach: Integrating SEO with content, UX, and digital marketing strategies."
+          ]
+        },
+        "processDetail": {
+          "active": true,
+          "title": "Our SEO Process – Step by Step",
+          "steps": [
+            {
+              "step": "1",
+              "title": "Website Audit & Analysis",
+              "description": "Identify strengths, weaknesses, and opportunities."
+            },
+            {
+              "step": "2",
+              "title": "Keyword & Competitor Research",
+              "description": "Formulate a data-driven SEO strategy."
+            },
+            {
+              "step": "3",
+              "title": "On-Page Optimization",
+              "description": "Improve website structure, content, and metadata."
+            },
+            {
+              "step": "4",
+              "title": "Technical SEO Fixes",
+              "description": "Enhance speed, mobile-friendliness, and indexing."
+            },
+            {
+              "step": "5",
+              "title": "Content Development & Optimization",
+              "description": "Publish engaging, SEO-friendly content."
+            },
+            {
+              "step": "6",
+              "title": "Backlink & Authority Building",
+              "description": "Gain high-quality links."
+            },
+            {
+              "step": "7",
+              "title": "Local & E-commerce SEO",
+              "description": "Target relevant audiences."
+            },
+            {
+              "step": "8",
+              "title": "Monitoring & Reporting",
+              "description": "Continuous improvement."
+            }
+          ]
+        },
+        "benefits": {
+          "active": true,
+          "title": "Benefits of Choosing Promfly SEO Services",
+          "points": [
+            "Higher Search Engine Rankings: Appear on Google's first page for relevant keywords.",
+            "Increased Organic Traffic: Attract qualified visitors without extra ad spend.",
+            "Better Conversion Rates: Targeted SEO strategies bring ready-to-engage customers.",
+            "Sustainable Growth: White-hat practices ensure long-term online success.",
+            "Enhanced Brand Authority: Become a trusted resource in your industry."
+          ]
+        },
+        "finalCTA": {
+          "active": true,
+          "title": "SEO is no longer optional—it's a business necessity.",
+          "body": "Whether you are a small startup establishing your presence or a large enterprise maintaining market dominance, Promfly's professional SEO company India services deliver measurable results, sustainable growth, and a strong online presence."
+        }
+      },
+      "footerCTA": {
+        "active": true,
+        "title": "Ready to Dominate Search Results ?",
+        "subtitle": "Get a free SEO audit and discover how we can improve your search visibility.",
+        "ctaPrimary": "Get Free SEO Audit",
+        "ctaSecondary": "Request a call back",
+        "supportNote": "OR contact our learner support. We are available 24/7."
+      }
+    }
+  }
+}

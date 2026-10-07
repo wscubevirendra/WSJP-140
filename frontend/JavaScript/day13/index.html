@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading {
+            background-color: red;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Hello</h1>
+    <button onclick="demo()">Click</button>
+
+    <script>
+
+
+        function demo() {
+            const heading = document.querySelector('#heading');
+            heading.innerHTML = "<i>Element Text Change</i>";
+            heading.style.background="green";
+            heading.style.color="white";
+            heading.style.display="none"
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

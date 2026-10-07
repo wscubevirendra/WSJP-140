@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 800px;
+            height: 300px;
+            border: 2px solid black;
+            margin:20px auto;
+            display: flex;
+        }
+        .col1{
+            width: 400px;
+            height: 300px;
+            background-color: red;
+        }
+
+        .col1:nth-child(1){
+            background-color: yellow;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col1"></div>
+        <div class="col1">Col2</div>
+        
+    </div>
+    
+</body>
+</html>

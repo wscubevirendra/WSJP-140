@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1000px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 50px auto;
+        }
+        .row1{
+            width: 1000px;
+            height: 200px;
+            /* background-color: green; */
+            display: flex;
+        }
+        .col{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+        }
+
+        .col:nth-child(3){
+            width: 600px;
+        }
+
+        .row2{
+            width: 1000px;
+            height: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row2"></div>
+    </div>
+
+</body>
+
+</html>

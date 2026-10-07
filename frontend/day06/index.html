@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML & CSS</title>
+
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+
+        header{
+            background-color: navy;
+            color: white;
+            text-align: center;
+            height: 100px;
+        }
+
+        nav{
+            background-color: lightgray;
+            text-align: center;
+            height: 40px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        section{
+            background-color: white;
+            width: 800px;
+            margin: auto;
+        }
+
+        h2{
+            color: darkblue;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        p{
+            font-size: 18px;
+            color: black;
+        }
+
+        img{
+            width: 800px;
+            height: 300px;
+        }
+
+        table{
+            width: 800px;
+            text-align: center;
+            background-color: white;
+        }
+
+        th{
+            background-color: darkblue;
+            color: white;
+        }
+
+        form{
+            width: 500px;
+            background-color: white;
+        }
+
+        input,
+        select,
+        textarea{
+            width: 100%;
+            height: 30px;
+            font-size: 16px;
+        }
+
+        textarea{
+            height: 100px;
+        }
+
+        button{
+            width: 120px;
+            height: 40px;
+            background-color: darkblue;
+            color: white;
+            font-size: 16px;
+        }
+
+        footer{
+            background-color: navy;
+            color: white;
+            text-align: center;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My First Website</h1>
+        <p>Learning HTML & Basic CSS</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Services</a> |
+        <a href="#">Contact</a>
+    </nav>  
+
+    <main>
+
+        <section>
+
+            <h2>About HTML</h2>
+
+            <p>
+                HTML is used to create the structure of a webpage.
+                CSS is used to change the design of the webpage.
+            </p>
+
+            <img src="https://via.placeholder.com/800x300" alt="Image">
+
+        </section>
+
+     
+
+        <section>
+
+            <h2>Registration Form</h2>
+
+            <form>
+
+                <p>Name</p>
+                <input type="text">
+
+                <p>Email</p>
+                <input type="email">
+
+                <p>Course</p>
+                <select>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                </select>
+
+                <p>Message</p>
+                <textarea></textarea>
+
+                <br><br>
+
+                <button>Submit</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026 My Website</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+      
+    
+    <linearGradient id="holiday" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#337AE5"></stop>
+      <stop offset="34%" stop-color="#408FE5"></stop>
+      <stop offset="71%" stop-color="#D4734A"></stop>
+      <stop offset="100%" stop-color="#EA6B2E"></stop>
+    </linearGradient>
+    <linearGradient id="dd-holiday-gradient-emoji" x1="0" y1="0" x2="50" y2="50" href="#holiday"></linearGradient>
+    <linearGradient id="dd-holiday-gradient-truck" x1="0" y1="0" x2="60" y2="50" href="#holiday"></linearGradient>
+    <linearGradient id="dd-holiday-gradient-app" x1="0" y1="0" x2="45" y2="50" href="#holiday"></linearGradient>
+    <linearGradient id="dd-holiday-gradient-mac-watch" x1="0" y1="0" x2="60" y2="45" href="#holiday"></linearGradient>
+    <linearGradient id="dd-holiday-gradient-box" x1="0" y1="0" x2="55" y2="60" href="#holiday"></linearGradient>
+    <linearGradient id="dd-holiday-gradient-card" x1="0" y1="0" x2="60" y2="35" href="#holiday"></linearGradient>
+    <linearGradient id="dd-holiday-gradient-trade" x1="0" y1="0" x2="50" y2="35" href="#holiday"></linearGradient>
+
+  </defs>
+</svg>

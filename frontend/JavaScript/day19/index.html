@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 800px;
+            margin: 50px auto;
+        }
+
+        .faq-container {
+            background-color: white;
+            margin-top: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            padding: 10px;
+
+        }
+
+        .faq-title {
+            font-size: 15px;
+            cursor: pointer;
+            padding: 4px;
+
+        }
+
+        .faq-title:hover {
+            background-color: teal;
+            color: white;
+        }
+
+        .faq-content {
+            height: 0;
+            overflow: hidden;
+            transition: 1s;
+        }
+
+        .open {
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="faq-container">
+            <div class="faq-title">
+                <h2>Can I track the location of my booked bus online?</h2>
+            </div>
+            <div class="faq-content">
+                <p>Yes, you can track your bus online by using our bus tracking app feature called “Track My Bus”. This
+                    feature allows passengers and their families to track the live bus location. You may follow your bus
+                    on a map and use the information to plan your trip to the boarding point and to get off at the
+                    correct stop. Family and friends may also check the bus position to schedule pick-ups and ensure
+                    safety.
+
+                </p>
+            </div>
+
+        </div>
+        <div class="faq-container">
+            <div class="faq-title">
+                <h2>Can I track the location of my booked bus online?</h2>
+            </div>
+            <div class="faq-content ">
+                <p>Yes, you can track your bus online by using our bus tracking app feature called “Track My Bus”. This
+                    feature allows passengers and their families to track the live bus location. You may follow your bus
+                    on a map and use the information to plan your trip to the boarding point and to get off at the
+                    correct stop. Family and friends may also check the bus position to schedule pick-ups and ensure
+                    safety.
+
+                </p>
+            </div>
+
+        </div>
+        <div class="faq-container">
+            <div class="faq-title">
+                <h2>What are the advantages of bus ticket booking with redBus?</h2>
+            </div>
+            <div class="faq-content">
+                <p>There are many advantages of booking bus tickets online with redBus. redBus is India’s leading bus
+                    ticket booking platform, where you can book private or government-owned buses. redBus allows you to
+                    find the different types of buses, choose the preferred bus seats, and find your nearest boarding
+                    and dropping points. You can also filter the buses based on timings, like morning, evening, etc.
+
+
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const faq_titles = document.querySelectorAll(".faq-title");
+
+        for (const title of faq_titles) {
+            title.addEventListener("click", () => {
+                const faqContent = title.nextElementSibling
+                faqContent.style.height = faqContent.scrollHeight + "px"
+                faqContent.classList.add("open")
+            })
+
+        }
+    </script>
+</body>
+
+</html>

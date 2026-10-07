@@ -1,0 +1,72 @@
+<script>
+    //Write a program that checks if it’s raining or not and advises whether to take a raincoat.
+
+    // let isRaining = true;  //true false
+
+    // if (isRaining) {
+    //     console.log("raincoat is required")
+    // } else {
+    //     console.log("raincoat is not required")
+    // }
+
+    //Create a program that determines if a CIBIL score is excellent, good, average, or poor based on given ranges.
+
+    // let cibilScore = Number(prompt("Enter your cibil score"));  //750
+
+    // if (cibilScore >= 800 && cibilScore <= 850) {
+    //     //true && true=true
+    //     console.log(" CIBIL score is excellent");
+    // } else if (cibilScore >= 740) {
+    //     console.log(" CIBIL score is very good");
+    // } else if (cibilScore >= 670) {
+    //     console.log(" CIBIL score is  good");
+
+    // } else if (cibilScore >= 580) {
+    //     console.log(" CIBIL score is  fair");
+
+    // } else if (cibilScore >= 300) {
+    //     console.log(" CIBIL score is  ppor");
+
+    // } else {
+    //     console.log("Invalid Cibil Score")
+    // }
+    // let password = "ASDAadsfsfdfdsfasdfdsfsdfds   S";
+    // console.log(password.length)
+
+    //Calculate simple interest, and apply a discount for short-term loans (less than 1 year).
+    // let p = 20000;
+    // let r = 10;
+    // let t = 3;
+
+    // let simple_interest = (p * r * t) / 100;  //3000
+    // if (t < 2) {
+    //     simple_interest = simple_interest - (simple_interest * 10) / 100;
+    // }
+
+    // console.log(simple_interest)
+
+    //     "Write a program to calculate the electricity bill based on the number of units consumed. Use the following conditions for the tariff rates:
+
+    // For the first 100 units: ₹3 per unit.
+    // For the next 200  ₹5 per unit.
+    // For units above 300: ₹10 per unit.
+    // Fixed surcharge: ₹50 added to the total bill."
+
+    let unit = 350;
+    let result = 0;
+    if (unit <= 100) {
+        result = (unit * 3);
+    } else if (unit > 100 && unit < 300) {
+        result = + (unit - 100) * 5;
+    } else if (unit >= 300) {
+        result = + 1000 + (unit - 300) * 10;
+    }
+
+    console.log(result+50)
+
+
+
+
+
+
+</script>

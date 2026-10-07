@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DOM Recipe App</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #111827;
+    }
+
+    /* Recipe Container */
+    #recipeContainer {
+      max-width: 1100px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    /* Recipe Card */
+    .recipe-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+      transition: 0.3s;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .recipe-info {
+      padding: 20px;
+    }
+
+    .recipe-info h2 {
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .recipe-info p {
+      margin-bottom: 8px;
+      color: #6b7280;
+    }
+
+    .view-btn {
+      margin-top: 10px;
+      padding: 10px 16px;
+
+      border: none;
+      border-radius: 6px;
+
+      background: #2563eb;
+      color: white;
+
+      cursor: pointer;
+    }
+
+    /* Modal Background */
+    #recipeModal {
+      display: none;
+
+      position: fixed;
+      inset: 0;
+
+      background: rgba(0, 0, 0, 0.65);
+
+      justify-content: center;
+      align-items: center;
+
+      padding: 20px;
+    }
+
+    /* Modal Box */
+    .modal-content {
+      position: relative;
+
+      width: 500px;
+      max-width: 100%;
+      max-height: 90vh;
+
+      overflow-y: auto;
+
+      background: white;
+      border-radius: 15px;
+
+      padding: 25px;
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: 250px;
+
+      object-fit: cover;
+
+      border-radius: 10px;
+
+      margin-bottom: 20px;
+    }
+
+    .modal-content h2 {
+      margin-bottom: 10px;
+    }
+
+    .modal-content p {
+      margin-bottom: 10px;
+      color: #4b5563;
+    }
+
+    .modal-content h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .modal-content ul {
+      padding-left: 20px;
+    }
+
+    .modal-content li {
+      margin-bottom: 6px;
+    }
+
+    /* Close Button */
+    #closeBtn {
+      position: absolute;
+
+      right: 15px;
+      top: 15px;
+
+      width: 35px;
+      height: 35px;
+
+      border: none;
+      border-radius: 50%;
+
+      background: white;
+
+      font-size: 24px;
+
+      cursor: pointer;
+
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      #recipeContainer {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      #recipeContainer {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Recipe Collection</h1>
+
+  <!-- Cards will be created using JavaScript -->
+  <div id="recipeContainer"></div>
+
+
+  <!-- Recipe Popup -->
+  <div id="recipeModal">
+
+    <div class="modal-content">
+
+      <button id="closeBtn">×</button>
+
+      <img id="modalImage" src="" alt="Recipe">
+
+      <h2 id="modalTitle"></h2>
+
+      <p id="modalCategory"></p>
+
+      <p id="modalTime"></p>
+
+      <p id="modalDescription"></p>
+
+      <h3>Ingredients</h3>
+
+      <ul id="modalIngredients"></ul>
+
+    </div>
+
+  </div>
+
+
+  <script>
+
+    // ==========================================
+    // 1. Recipe Data
+    // ==========================================
+
+    const recipes = [
+
+      {
+        id: 1,
+
+        title: "Creamy Pasta",
+
+        image:
+          "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0",
+
+        category: "Italian",
+
+        time: "25 Minutes",
+
+        description:
+          "Creamy and delicious pasta made with simple ingredients.",
+
+        ingredients: [
+          "Pasta",
+          "Cream",
+          "Garlic",
+          "Cheese",
+          "Black Pepper"
+        ]
+      },
+
+
+      {
+        id: 2,
+
+        title: "Veg Burger",
+
+        image:
+          "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+
+        category: "Fast Food",
+
+        time: "20 Minutes",
+
+        description:
+          "Crispy vegetable burger with fresh vegetables and delicious sauce.",
+
+        ingredients: [
+          "Burger Bun",
+          "Veg Patty",
+          "Tomato",
+          "Lettuce",
+          "Cheese"
+        ]
+      },
+
+
+      {
+        id: 3,
+
+        title: "Fresh Salad",
+
+        image:
+          "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+
+        category: "Healthy",
+
+        time: "10 Minutes",
+
+        description:
+          "Fresh and healthy salad packed with vegetables.",
+
+        ingredients: [
+          "Cucumber",
+          "Tomato",
+          "Lettuce",
+          "Onion",
+          "Lemon"
+        ]
+      }
+
+    ];
+
+
+    // ==========================================
+    // 2. Select DOM Elements
+    // ==========================================
+
+    const recipeContainer =
+      document.querySelector("#recipeContainer");
+
+
+    const recipeModal =
+      document.querySelector("#recipeModal");
+
+
+    const closeBtn =
+      document.querySelector("#closeBtn");
+
+
+    const modalImage =
+      document.querySelector("#modalImage");
+
+
+    const modalTitle =
+      document.querySelector("#modalTitle");
+
+
+    const modalCategory =
+      document.querySelector("#modalCategory");
+
+
+    const modalTime =
+      document.querySelector("#modalTime");
+
+
+    const modalDescription =
+      document.querySelector("#modalDescription");
+
+
+    const modalIngredients =
+      document.querySelector("#modalIngredients");
+
+
+    // ==========================================
+    // 3. Create Recipe Cards
+    // ==========================================
+
+    recipes.forEach(function (recipe) {
+
+      // Create Card
+      const card =
+        document.createElement("div");
+
+
+      // Add class
+      card.className = "recipe-card";
+
+
+      // Add HTML
+      card.innerHTML = `
+
+        <img
+          src="${recipe.image}"
+          alt="${recipe.title}"
+        >
+
+        <div class="recipe-info">
+
+          <h2>${recipe.title}</h2>
+
+          <p>
+            Category: ${recipe.category}
+          </p>
+
+          <p>
+            Cooking Time: ${recipe.time}
+          </p>
+
+          <p>
+            ${recipe.description}
+          </p>
+
+          <button class="view-btn">
+            View Recipe
+          </button>
+
+        </div>
+
+      `;
+
+
+      // ==========================================
+      // 4. Card Click Event
+      // ==========================================
+
+      card.addEventListener("click", function () {
+
+        // Update Modal Image
+        modalImage.src = recipe.image;
+
+
+        // Update Modal Title
+        modalTitle.textContent = recipe.title;
+
+
+        // Update Category
+        modalCategory.textContent =
+          `Category: ${recipe.category}`;
+
+
+        // Update Time
+        modalTime.textContent =
+          `Cooking Time: ${recipe.time}`;
+
+
+        // Update Description
+        modalDescription.textContent =
+          recipe.description;
+
+
+        // Remove Previous Ingredients
+        modalIngredients.innerHTML = "";
+
+
+        // ==========================================
+        // 5. Create Ingredients
+        // ==========================================
+
+        recipe.ingredients.forEach(function (ingredient) {
+
+          const li =
+            document.createElement("li");
+
+
+          li.textContent = ingredient;
+
+
+          modalIngredients.appendChild(li);
+
+        });
+
+
+        // ==========================================
+        // 6. Show Modal
+        // ==========================================
+
+        recipeModal.style.display = "flex";
+
+      });
+
+
+      // ==========================================
+      // 7. Add Card to Container
+      // ==========================================
+
+      recipeContainer.appendChild(card);
+
+    });
+
+
+    // ==========================================
+    // 8. Close Modal
+    // ==========================================
+
+    closeBtn.addEventListener("click", function () {
+
+      recipeModal.style.display = "none";
+
+    });
+
+
+    // ==========================================
+    // 9. Close Modal by Clicking Outside
+    // ==========================================
+
+    recipeModal.addEventListener("click", function (event) {
+
+      if (event.target === recipeModal) {
+
+        recipeModal.style.display = "none";
+
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>

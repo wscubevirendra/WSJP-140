@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2015/11/03/09/03/question-mark-1019993_640.jpg" alt="">
+    </div>
+    <button onclick="swap()">></button>
+    <div class="card">
+
+
+    </div>
+    <script>
+        const card = document.querySelectorAll(".card");
+
+        function swap() {
+            card[1].innerHTML = card[0].innerHTML;
+            card[0].innerHTML=""
+        }
+
+
+
+    </script>
+</body>
+
+</html>

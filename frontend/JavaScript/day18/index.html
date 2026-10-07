@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+
+        }
+
+        .container {
+            width: 700px;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+            background-color: white;
+            margin: 50px auto;
+        }
+
+        .input-container {
+            width: 100%;
+            display: flex;
+            gap: 20px;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 6px;
+        }
+
+        .input-container button {
+            padding: 4px 10px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .container ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+            min-height: 300px;
+        }
+
+        .container ul li {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+        }
+
+        .container ul li i {
+            cursor: pointer;
+        }
+
+        .done {
+            text-decoration: line-through;
+            text-decoration-color: red;
+            opacity: 0.4;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" placeholder="Input ........">
+            <button>Add</button>
+        </div>
+        <ul>
+
+        </ul>
+
+    </div>
+    <script>
+        const input = document.querySelector(".input-container input");
+        const button = document.querySelector(".input-container button");
+        const list = document.querySelector(".container ul");
+
+        input.addEventListener("keyup", (event) => {
+            if (event.key === "Enter") {
+                todo(event.target.value)
+            }
+        })
+
+
+        button.addEventListener("click", (event) => {
+            todo()
+        })
+
+
+        function todo() {
+            let value = input.value.trim();
+            if (value === "") {
+                return alert("Empty input please type  ")
+            }
+            const listItem = document.createElement("li");
+            listItem.innerHTML = `${value} <i class="fa-solid fa-trash"></i>`
+
+            const r = parseInt(Math.random() * 256);
+            const g = parseInt(Math.random() * 256);
+            const b = parseInt(Math.random() * 256);
+
+            listItem.style.background = `rgb(${r},${g},${b})`
+
+            listItem.addEventListener("click", () => {
+                listItem.classList.toggle("done")
+
+            })
+
+            listItem.querySelector("i").addEventListener("click", () => {
+                listItem.remove();
+            })
+
+
+            list.append(listItem)
+            input.value = ""
+        }
+
+    </script>
+</body>
+
+</html>

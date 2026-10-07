@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1100px;
+            height: 500px;
+            margin: 50px auto;
+            display: flex;
+            gap: 50px;
+        }
+
+        .card {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div onclick="changeHanlder(this)" class="card">1</div>
+        <div onclick="changeHanlder(this)" class="card">2</div>
+        <div onclick="changeHanlder(this)" class="card">3</div>
+        <div onclick="changeHanlder(this)" class="card">4</div>
+        <div onclick="changeHanlder(this)" class="card">5</div>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll(".card");
+        console.log(cards)
+
+        function changeHanlder(card) {
+
+            for (const box of cards) {
+                box.style = ""
+            }
+
+            card.style.transform = "scale(0.5)";
+            card.style.background = "teal"
+            card.style.transition = "1s"
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            width: 1000px;
+            border: 2px solid red;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, calc(25% - 20px));
+            gap: 20px;
+
+        }
+
+        .card {
+            /* border: 2px solid black; */
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: teal;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .card:nth-child(1) {
+            grid-column: span 3;
+            grid-row: span 3;
+         
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+        <div class="card">7</div>
+        <div class="card">8</div>
+        <div class="card">9</div>
+        <div class="card">10</div>
+        <div class="card">11</div>
+        <div class="card">12</div>
+
+    </div>
+
+</body>
+
+</html>
