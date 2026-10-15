@@ -1,0 +1,17 @@
+{
+  "name": "my_project",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "virendra",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "mongoose": "^9.11.2",
+    "random-password": "^0.1.2"
+  }
+}
