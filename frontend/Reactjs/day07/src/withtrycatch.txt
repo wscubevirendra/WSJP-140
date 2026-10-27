@@ -1,0 +1,83 @@
+
+import { useCallback, useEffect, useState } from "react";
+import ProductCard from "./ProductCard";
+import SkeletonCard from "./SkeletonCard";
+import axios from "axios";
+
+export default function ProductContainer() {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  const fetchProducts = useCallback(async () => {
+    setLoading(true);
+    setError("");
+
+    try {
+      const response = await axios.get(
+        "https://dummyjson.com/products"
+      );
+
+      setProducts(response.data.products);
+    } catch (error) {
+      setError(
+        error.response?.data?.message ||
+          error.message ||
+          "Failed to fetch products"
+      );
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchProducts();
+  }, [fetchProducts]);
+
+  if (error) {
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center gap-4">
+        <p className="text-red-600">{error}</p>
+
+        <button
+          onClick={fetchProducts}
+          className="rounded-lg bg-blue-600 px-5 py-2 text-white hover:bg-blue-700"
+        >
+          Retry
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-full">
+      <div className="mx-auto max-w-7xl p-4">
+        <h2 className="my-4 text-4xl font-bold">
+          Product List
+        </h2>
+
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {loading ? (
+            Array.from({ length: 8 }, (_, index) => (
+              <SkeletonCard key={index} />
+            ))
+          ) : products.length === 0 ? (
+            <div className="col-span-full py-10 text-center text-gray-500">
+              No Products Found
+            </div>
+          ) : (
+            products.map((product) => (
+              <ProductCard
+                key={product.id}
+                price={product.price}
+                thumbnail={product.thumbnail}
+                title={product.title}
+                rating={product.rating}
+              />
+            ))
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
