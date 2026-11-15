@@ -1,6 +1,7 @@
 import { useState } from "react";
 import List from "./List";
 import ZomotoCard from "./ZomatoCard";
+import Card from "./Card";
 
 function App() {
   const [restaurants, setRestaurants] = useState([
@@ -39,6 +40,7 @@ function App() {
 
   return (
     <div className="w-7xl mx-auro p-4">
+      <Card/>
       <List />
       <div className="grid grid-cols-3 gap-4">
         {
