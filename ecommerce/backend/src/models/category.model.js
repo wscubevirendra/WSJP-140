@@ -16,11 +16,12 @@ const categorySchema = new mongoose.Schema({
         trim: true
     },
     image: {
-        type: String
+        type: String,
+        required: [true, "Image is required"],
     },
     status: {
         type: Boolean,
-        required: true
+        default: true
     }
 },
     {
@@ -30,8 +31,7 @@ const categorySchema = new mongoose.Schema({
 
 
 // Automatically generate slug
-categorySchema.pre("validate", function (next) {
-
+categorySchema.pre("validate", function () {
     if (this.isModified("name")) {
         this.slug = slugify(this.name, {
             lower: true,
@@ -39,7 +39,6 @@ categorySchema.pre("validate", function (next) {
         });
     }
 
-    next();
 });
 
 
