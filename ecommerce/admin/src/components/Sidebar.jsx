@@ -35,12 +35,12 @@ const appItems = [
   {
     name: "Category",
     icon: FiMessageSquare,
-    path: "/admin/chat",
+    path: "/admin/categories",
   },
   {
     name: "Product",
     icon: FiCalendar,
-    path: "/admin/calendar",
+    path: "/admin/products",
   },
   {
     name: "Email",
@@ -71,9 +71,8 @@ function Sidebar() {
 
   return (
     <aside
-      className={`relative flex h-screen flex-col border-r border-gray-200 bg-white transition-all duration-300 ${
-        collapsed ? "w-[90px]" : "w-[290px]"
-      }`}
+      className={`relative flex h-screen flex-col border-r border-gray-200 bg-white transition-all duration-300 ${collapsed ? "w-[90px]" : "w-[290px]"
+        }`}
     >
       {/* Logo Section */}
       <div className="flex h-[105px] shrink-0 items-center gap-3 border-b border-gray-200 px-6">
@@ -125,19 +124,17 @@ function Sidebar() {
                   key={item.path}
                   to={item.path}
                   title={collapsed ? item.name : ""}
-                  className={`flex items-center gap-4 rounded-xl px-4 py-3.5 transition-all duration-200 ${
-                    active
+                  className={`flex items-center gap-4 rounded-xl px-4 py-3.5 transition-all duration-200 ${active
                       ? "bg-[#155e52] text-white"
                       : "text-gray-700 hover:bg-gray-100"
-                  }`}
+                    }`}
                 >
                   <Icon
                     size={23}
-                    className={`shrink-0 ${
-                      active
+                    className={`shrink-0 ${active
                         ? "text-[#8acb66]"
                         : "text-gray-500"
-                    }`}
+                      }`}
                   />
 
                   {!collapsed && (
@@ -175,19 +172,17 @@ function Sidebar() {
                   key={item.path}
                   to={item.path}
                   title={collapsed ? item.name : ""}
-                  className={`flex items-center gap-4 rounded-xl px-4 py-3.5 transition-all duration-200 ${
-                    active
+                  className={`flex items-center gap-4 rounded-xl px-4 py-3.5 transition-all duration-200 ${active
                       ? "bg-[#155e52] text-white"
                       : "text-gray-700 hover:bg-gray-100"
-                  }`}
+                    }`}
                 >
                   <Icon
                     size={23}
-                    className={`shrink-0 ${
-                      active
+                    className={`shrink-0 ${active
                         ? "text-[#8acb66]"
                         : "text-gray-500"
-                    }`}
+                      }`}
                   />
 
                   {!collapsed && (
@@ -204,7 +199,7 @@ function Sidebar() {
 
       </div>
 
-   
+
     </aside>
   );
 }

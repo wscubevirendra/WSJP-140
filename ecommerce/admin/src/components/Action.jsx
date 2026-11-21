@@ -7,7 +7,7 @@ import {
 
 function Action({ onView, onEdit, onDelete }) {
   return (
-    <div className="absolute right-0 top-10 z-20 w-40 rounded-xl border border-gray-100 bg-white p-2 shadow-lg">
+    <div className="absolute right-20 top-10 z-20 w-40 rounded-xl border border-gray-100 bg-white p-2 shadow-lg">
 
       {/* View */}
       <button
@@ -41,3 +41,6 @@ function Action({ onView, onEdit, onDelete }) {
 }
 
 export default Action;
+
+
+

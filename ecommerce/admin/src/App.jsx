@@ -4,6 +4,7 @@ import Layout from './pages/Layout'
 import DashBoard from './pages/DashBoard'
 import Analytics from './pages/Analytics'
 import Products from './pages/Products'
+import Categories from './pages/Categories'
 
 
 export default function App() {
@@ -21,10 +22,14 @@ export default function App() {
           element: <Analytics />
         },
         {
-          path:"/admin/products",
-          element:<Products/>
+          path: "/admin/products",
+          element: <Products />
+        },
+        {
+          path: "/admin/categories",
+          element: <Categories />
         }
-        
+
       ]
     }
   ])
